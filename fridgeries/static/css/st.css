@@ -1,0 +1,177 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+	background-image: url("https://i.ibb.co/9czKqPg/hrana2.jpg");
+}
+  h4{ 
+   font-size: 40px;
+   color:white;
+   font-family: Ink free;}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rgba(114,133,165, 0.6);
+    font-family: arial;
+    
+}
+.logo{
+    color: white;
+    font-size: 20px;
+}
+.nav-links{
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+/*stranica unos*/
+
+.boxunos{
+    width: 60%;
+    padding:  70px;
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background-color:rgba(0, 0, 0, 0.4);
+    text-align: center;
+    border-radius: 24px;
+	color: white;
+	margin-top:30px;
+	}
+.boxunos h1{
+    font-size: 70px;
+    color:white;
+    font-family: Ink free;
+    font-weight: 300; 
+	text-align:center;
+}
+
+.boxunos input[type = "text"], select{
+    border: 0;
+    background: none;
+    display: block;
+    margin:20px auto;
+    text-align: center;
+    border: 2px solid #7285A5;
+    padding: 14px 10px;
+    width: 200px;
+    outline:none;
+    color: white;
+    border-radius: 24px;
+	background-color:rgba(0, 0, 0, 0.4);
+    
+}
+
+
+
+
+::placeholder{
+    color:white;
+}
+.boxunos input[type="text"]:focus,select:focus{
+    width:280px;
+    border-color:white;
+    transition: 0.25s;
+   
+    
+}
+.boxunos input[type="submit"]{
+    
+    border: 0;
+    background: none;
+    display: block;
+    margin:20px auto;
+    text-align: center;
+    border: 2px solid white;
+    padding: 14px 40px;
+    outline:none;
+    color: white;
+    border-radius: 24px;
+    cursor: pointer;
+    
+}
+.boxunos input[type ="submit"]:hover{
+    background: #7285A5;
+       
+}
+#sadrzaj input[type="submit"]{
+    
+    border: 0;
+    background: none;
+    display: block;
+    margin:20px auto;
+    text-align: center;
+    border: 2px solid white;
+    padding: 14px 40px;
+    outline:none;
+    color: white;
+    border-radius: 24px;
+    cursor: pointer;
+    
+}
+#sadrzaj input[type ="submit"]:hover{
+    background: #7285A5;
+       
+/*naslovna*/
+
+table {
+   border-collapse: collapse;
+   width: 100%;
+   color: #588c7e;
+   font-family: monospace;
+   font-size: 25px;
+   text-align: left;
+     } 
+  th {
+   background-color: #588c7e;
+   color: white;
+    }
+  tr:nth-child(even) {background-color: #f2f2f2}
+  
+ 
+
+  
+ /*za mob/tablete*/
+ 
+@media screen and (max-width:1100px){
+.logo h4{
+font-size:25px;
+		 
+}
+.nav-links{
+display: flex;
+width: 65%;
+justify-content: space-around;
+}
+	
+.boxunos h1{
+font-size:30px;
+	}
+.boxunos{
+margin-top:3vh;
+width:70%;
+	}
+.boxunos input[type="text"]:focus,select:focus{
+width:220px;
+	}
+	 
+ } 
+ 
+ 

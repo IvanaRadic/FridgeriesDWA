@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<link rel='stylesheet'type='text/css'href='{{ url_for("static", filename="css/st.css")}}'>
+	<link rel="icon" href="https://d1nw62gticy6e9.cloudfront.net/uploads/Urban-Farmer-Favicon-Tomato.jpg" type="image/x-icon"/>
+	<title>Fridgeries</title>
+</head>
+<body>
+<style>
+body{
+background-image: url("https://i.ibb.co/9czKqPg/hrana2.jpg");
+	}
+		/*za mob/tablete*/
+ 
+@media screen and (max-width:1100px){
+.logo h4{
+font-size:25px;
+		 
+}
+.nav-links{
+display: flex;
+width: 65%;
+justify-content: space-around;
+}
+	
+.boxunos h1{
+font-size:30px;
+	}
+.boxunos{
+margin-top:3vh;
+width:70%;
+	}
+.boxunos input[type="text"]:focus,select:focus{
+width:220px;
+	}
+	 
+ } 
+		</style>
+<nav>
+        <div class="logo">
+        <h4>Fridgeries</h4>
+        </div>
+        <ul class="nav-links">
+            <li><a href='/naslovna'>Moj Hladnjak</a></li>
+            <li><a href="#" style="text-decoration: underline;">Dodaj Namirnicu</a></li>
+            <li><a href='{{url_for('odjava')}}'>Odjava</a></li>
+        </ul>
+    </nav>
+
+<form method='POST' class='boxunos'>
+<h1>Dodaj namirnicu</h1>
+<br>
+<input type ='text' name='imenamirnice' placeholder='Ime namirnice' required>
+		<select name="kategorija">
+		<option value="" disabled selected hidden >Odaberi kategoriju</option>
+		<option value="Voće">Voće</option>
+		<option value="Povrće">Povrće</option>
+		<option value="Sokovi">Sokovi</option>
+		<option value="Mliječni proizvodi">Mliječni proizvodi</option>	
+		<option value="Mesni proizvodi">Mesni proizvodi</option>
+		<option value="Žitarice">Žitarice</option>
+	</select>
+            
+			
+			<br> <br><br> <br>
+			
+            <input type='submit' name='unos' value='Spremi'>
+        </form>
+</body>
+</html>

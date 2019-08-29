@@ -1,0 +1,17 @@
+{% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for category, message in messages %}
+    <div class="{{ category }}"style="color:white;text-transform: uppercase;">
+	<h4>
+	  <div id="poruka" style="background-color:rgba(0, 0, 0, 0.4); width:100%; height:40px; position:absolute;
+	  margin-left:-40px; margin-top:-22px; text-align:center; padding-top:10px;">
+	  {{ message }}
+	  
+	 </h4>
+	 </div>
+	 </div>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}

@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<style>
+body{
+background-image: url("https://i.ibb.co/9czKqPg/hrana2.jpg");
+	}
+	</style>
+		<form action='' method='POST' class='box'>
+            <h1>Fridgeries</h1>
+            <input type ='text' name='email' placeholder='E-mail' required>
+            <input type ='password' name='lozinka' placeholder='Lozinka' required>
+            <input type='submit' name='prij' value='Prijavi se'>
+            <a href='/registracija' style='text-decoration: none;'><h4>Registrirajte se</h4></a>
+        </form>
+{% endblock %}
